@@ -1,25 +1,33 @@
-function binarySearch(arr, key) {
-    let left = 0;
-    let right = arr.length;
-    let mid = parseInt(left + right / 2);
-    let found = -1;
-    while(left<right) {
-        mid = parseInt(left + right / 2);
-        if(key < arr[mid]) {
-            right = mid;
-        } else if(key > arr[mid]) {
-            left = mid;
-        } else if(key === arr[mid]){
-          found = mid;
-          break;
+// Original Solution
+function binarySearch(arr, elem) {
+    var start = 0;
+    var end = arr.length - 1;
+    var middle = Math.floor((start + end) / 2);
+    while(arr[middle] !== elem && start <= end) {
+        if(elem < arr[middle]){
+            end = middle - 1;
+        } else {
+            start = middle + 1;
         }
+        middle = Math.floor((start + end) / 2);
     }
-    return found;
+    if(arr[middle] === elem){
+        return middle;
+    }
+    return -1;
 }
 
-const isFound = binarySearch([100, 201, 232, 333, 544, 665, 666, 777, 888, 999], 544);
-if(isFound === -1) {
-    console.log("Element not found:", isFound);
-} else {
-   console.log("Given element found at position", isFound);
+// Refactored Version
+function binarySearch(arr, elem) {
+    var start = 0;
+    var end = arr.length - 1;
+    var middle = Math.floor((start + end) / 2);
+    while(arr[middle] !== elem && start <= end) {
+        if(elem < arr[middle]) end = middle - 1;
+        else start = middle + 1;
+        middle = Math.floor((start + end) / 2);
+    }
+    return arr[middle] === elem ? middle : -1;
 }
+
+binarySearch([2,5,6,9,13,15,28,30], 103)
