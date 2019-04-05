@@ -35,5 +35,5 @@ function insertionSort(arr){
 insertionSort([7, 8, 5, 2, 4, 6, 3, 33, 0, 4, 2, 2694, 302]);
 
 //Output:
-// [0, 2, 2, 3, 4, 4, 5, 6, 7, 8, 33, 302, 2694] 37
-// [0, 2, 2, 3, 4, 4, 5, 6, 7, 8, 33, 302, 2694] 37
+// [0, 2, 2, 3, 4, 4, 5, 6, 7, 8, 33, 302, 2694] 37 //37 indiactes total number of iterations.
+// [0, 2, 2, 3, 4, 4, 5, 6, 7, 8, 33, 302, 2694] 37 //37 indiactes total number of iterations.
