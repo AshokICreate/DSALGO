@@ -16,3 +16,6 @@ function isSubsequence(str1, str2) {
 }
 
 isSubsequence('sing', 'sting');
+
+
+[1, 2, 4, 5,]
