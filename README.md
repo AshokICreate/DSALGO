@@ -8,4 +8,17 @@
 #### Big O
 * Inserstion O(1) -> using unshift method
 * Removal O(1) -> using shift method
-* Searching/Acess O(n)
+* Searching/Acess O(N)
+
+### Queues - FIFO
+
+#### Advantages
+* Online game joining. Ex:- PUBG!!
+* Background tasks.
+* Uploading resources.
+* Printing.
+
+#### Big O
+* Inserstion O(1)
+* Removal O(1)
+* Searching/Acess O(N)
